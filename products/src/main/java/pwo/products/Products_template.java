@@ -6,9 +6,9 @@ package pwo.products;
  */
 public class Products_template {
 
-    String name;
-    int weight;
-    int value;
+    public String name;
+    public int weight;
+    public int value;
 
     /**
      *

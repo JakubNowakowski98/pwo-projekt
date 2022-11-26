@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Laptop dysk 4 tera 5 potem",
+        "weight": 8,
+        "value": 4500
+    },
+    {
+        "name": "Laptop dysk tysionc",
+        "weight": 5,
+        "value": 3000
+    },
+    {
+        "name": "Lokówka made in China",
+        "weight": 2,
+        "value": 250
+    },
+    {
+        "name": "Słuchawki z kablem bezprzewodowym",
+        "weight": 1,
+        "value": 200
+    },
+    {
+        "name": "God of War: Raz na rok the Game",
+        "weight": 1,
+        "value": 300
+    },
+    {
+        "name": "Lodówka która chłodzi",
+        "weight": 13,
+        "value": 1200
+    },
+    {
+        "name": "Telewizor Panasony",
+        "weight": 12,
+        "value": 2200
+    },
+    {
+        "name": "Klawiatura LPG",
+        "weight": 3,
+        "value": 150
+    },
+    {
+        "name": "Drukarka 5D",
+        "weight": 10,
+        "value": 200
+    },
+    {
+        "name": "PAD do GrajStacji 5",
+        "weight": 2,
+        "value": 150
+    }
+]

@@ -4,8 +4,16 @@ import pwo.discrete_knapsack_problem.Discrete_knapsack_problem;
 import pwo.products.Products;
 import pwo.products.Products_template;
 
+/**
+ *
+ * @author Michal Nurzynski
+ */
 public class GetData {
 
+    /**
+     *
+     * @return indexes of items that passed through knapsack problem, depends on knapsach size
+     */
     public static int[] compute() {
 
         Products_template[] products = Products.set_products();

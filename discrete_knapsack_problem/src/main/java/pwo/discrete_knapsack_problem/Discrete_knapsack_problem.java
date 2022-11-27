@@ -13,7 +13,7 @@ public class Discrete_knapsack_problem {
      *
      * As it is said below
      */
-    static int[] knapSack(int W) {// maximum weight of knapsack
+    public static int[] knapSack(int W) {// maximum weight of knapsack
         Products_template[] products = Products.set_products();
         int N = products.length;   // number of items
 

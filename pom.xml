@@ -12,6 +12,7 @@
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <exec.mainClass>pwo.user.User</exec.mainClass>
     </properties>
     <dependencies> 
         <dependency>
@@ -59,7 +60,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>pwo.app.Sequence</mainClass>
+                            <mainClass>pwo.user.User</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

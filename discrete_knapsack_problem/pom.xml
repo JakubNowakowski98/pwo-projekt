@@ -19,6 +19,5 @@
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <exec.mainClass>pwo.discrete_knapsack_problem._run</exec.mainClass>
     </properties>
 </project>

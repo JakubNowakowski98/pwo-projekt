@@ -18,11 +18,18 @@ public class User extends JFrame implements ActionListener {
     JTextArea lblText = new JTextArea();
     JLabel lblText2 = new JLabel();
 
+    /**
+     *
+     * Utworzenie frame
+     */
     public static void main(String[] args) {
         User fr = new User();
         fr.setVisible(true);
     }
 
+    /**
+     * utworzenie GUI
+     */
     public User() {
         Products_template[] products = Products.set_products();
             String output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
@@ -47,6 +54,10 @@ public class User extends JFrame implements ActionListener {
         add(lblText);
     }
 
+    /**
+     *
+     * Po wybraniu z listy konkretnego "plecaka" nastepuje wypisanie koncowych danych za pomoca switch case
+     */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == cmbMessageList) {
             JComboBox cb = (JComboBox) e.getSource();

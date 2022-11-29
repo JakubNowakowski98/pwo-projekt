@@ -5,10 +5,6 @@
  */
 package pwo.discrete_knapsack_problem;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,25 +13,6 @@ import static org.junit.Assert.*;
  * @author Michal Nurzynski
  */
 public class Discrete_knapsack_problemTest {
-    
-    public Discrete_knapsack_problemTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of knapSack method, of class Discrete_knapsack_problem.
@@ -47,8 +24,6 @@ public class Discrete_knapsack_problemTest {
         int[] expResult = null;
         int[] result = Discrete_knapsack_problem.knapSack(W);
         assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

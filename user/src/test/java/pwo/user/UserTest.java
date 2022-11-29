@@ -6,10 +6,6 @@
 package pwo.user;
 
 import java.awt.event.ActionEvent;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -19,24 +15,6 @@ import static org.junit.Assert.*;
  */
 public class UserTest {
     
-    public UserTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of main method, of class User.
@@ -59,8 +37,6 @@ public class UserTest {
         ActionEvent e = null;
         User instance = new User();
         instance.actionPerformed(e);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

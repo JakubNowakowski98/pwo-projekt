@@ -24,14 +24,14 @@ public class User extends JFrame implements ActionListener {
      */
     public static void main(String[] args) {
         User fr = new User();
-        fr.setVisible(true);
+        fr.setVisible(true); //sprawia że GUI jest widoczne
     }
 
     /**
      * utworzenie GUI
      */
     public User() {
-        Products_template[] products = Products.set_products();
+        Products_template[] products = Products.set_products(); //tablica wszystkich obiektów z modułu JN
         String output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
         int n = products.length;
         for (int i = 0; i < n; i++) {
@@ -41,9 +41,9 @@ public class User extends JFrame implements ActionListener {
         setLayout(new FlowLayout());
         setSize(800, 600);
         setTitle("Znajdz oferte dla siebie!");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //hindus kazał
         cmbMessageList.setSelectedIndex(0);
-        cmbMessageList.addActionListener(this);
+        cmbMessageList.addActionListener(this); //hindus kazał
         lblText2.setText("Wybierz sposób transportowania przedmiotów ze sklepu: ");
         lblText.setEditable(false);
         add(lblText2);
@@ -58,13 +58,12 @@ public class User extends JFrame implements ActionListener {
      */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == cmbMessageList) {
-            JComboBox cb = (JComboBox) e.getSource();
+            JComboBox cb = (JComboBox) e.getSource(); //spinner
             String msg = (String) cb.getSelectedItem();
             Products_template[] products = Products.set_products();
             String output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
             int n = products.length;
             int[] indexes = new int[n];
-            output = "Przedmioty z najlepszym stosunkiem cena/waga:\n";
             switch (msg) {
                 case "Pokaż wszystko":
                     output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
@@ -74,6 +73,7 @@ public class User extends JFrame implements ActionListener {
                     lblText.setText(output);
                     break;
                 case "Ręce(Pojemność 10)":
+                    output = "Przedmioty z najlepszym stosunkiem cena/waga:\n\n";
                     indexes = Discrete_knapsack_problem.knapSack(10);
                     for (int i = 0; i < n; i++) {
                         if (indexes[i] != -1) {
@@ -83,6 +83,7 @@ public class User extends JFrame implements ActionListener {
                     lblText.setText(output);
                     break;
                 case "Siatka z Biedronki(Pojemność 15)":
+                    output = "Przedmioty z najlepszym stosunkiem cena/waga:\n\n";
                     indexes = Discrete_knapsack_problem.knapSack(15);
                     for (int i = 0; i < n; i++) {
                         if (indexes[i] != -1) {
@@ -92,6 +93,7 @@ public class User extends JFrame implements ActionListener {
                     lblText.setText(output);
                     break;
                 case "Bagażnik samochodu(Pojemność 30)":
+                    output = "Przedmioty z najlepszym stosunkiem cena/waga:\n\n";
                     indexes = Discrete_knapsack_problem.knapSack(30);
                     for (int i = 0; i < n; i++) {
                         if (indexes[i] != -1) {
@@ -101,6 +103,7 @@ public class User extends JFrame implements ActionListener {
                     lblText.setText(output);
                     break;
                 case "Ciężarówka(Pojemność 40)":
+                    output = "Przedmioty z najlepszym stosunkiem cena/waga:\n\n";
                     indexes = Discrete_knapsack_problem.knapSack(40);
                     for (int i = 0; i < n; i++) {
                         if (indexes[i] != -1) {

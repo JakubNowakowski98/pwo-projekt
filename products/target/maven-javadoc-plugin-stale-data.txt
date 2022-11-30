@@ -1,0 +1,50 @@
+@options
+@packages
+-classpath
+'/home/student/.m2/repository/org/json/json/20180130/json-20180130.jar:/home/student/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/student/.m2/repository/junit/junit/4.10/junit-4.10.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'15'
+-sourcepath
+'/home/student/NetBeansProjects/pwo-projekt/products/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'products 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/15/docs/api' '/home/student/NetBeansProjects/pwo-projekt/products/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'products 1.0-SNAPSHOT API'
+pwo.products
+/home/student/.m2/repository/org/json/json/20180130/json-20180130.jar = 1669827639952
+/home/student/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar = 1669827639928
+/home/student/.m2/repository/junit/junit/4.10/junit-4.10.jar = 1669827639976
+/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar = 1669827640016
+/home/student/NetBeansProjects/pwo-projekt/products/src/main/java = 1669829611268
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/index.html = 1669830175472
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/element-list = 1669830175436
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/allclasses-index.html = 1669830175460
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/allpackages-index.html = 1669830175460
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/index-all.html = 1669830175472
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/package-search-index.js = 1669830175464
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/overview-tree.html = 1669830175456
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/script.js = 1669830175476
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/search.js = 1669830175476
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/type-search-index.js = 1669830175464
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/module-search-index.js = 1669830175464
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/tag-search-index.js = 1669830175464
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/help-doc.html = 1669830175476
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/member-search-index.js = 1669830175464
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/stylesheet.css = 1669830175476
+/home/student/NetBeansProjects/pwo-projekt/products/target/site/apidocs/jquery-ui.overrides.css = 1669830175484

@@ -13,7 +13,7 @@ import pwo.discrete_knapsack_problem.Discrete_knapsack_problem;
  */
 public class User extends JFrame implements ActionListener {
 
-    String[] messageStrings = {"Ręce(Pojemność 10)", "Siatka z Biedronki(Pojemność 15)", "Bagażnik samochodu(Pojemność 30)", "Ciężarówka(Pojemność 40)"};
+    String[] messageStrings = {"Pokaż wszystko", "Ręce(Pojemność 10)", "Siatka z Biedronki(Pojemność 15)", "Bagażnik samochodu(Pojemność 30)", "Ciężarówka(Pojemność 40)"};
     JComboBox cmbMessageList = new JComboBox(messageStrings);
     JTextArea lblText = new JTextArea();
     JLabel lblText2 = new JLabel();
@@ -32,15 +32,12 @@ public class User extends JFrame implements ActionListener {
      */
     public User() {
         Products_template[] products = Products.set_products();
-            String output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
-            int n = products.length;
-            int[] indexes = new int[n];
-            for (int i = 0; i < n; i++) {
-                        if (indexes[i] != -1) {
-                            output += "Nazwa: " + products[i].name + ", waga: " + products[i].weight + ", cena: " + products[i].value + "\n";
-                        }
-                    }
-                    lblText.setText(output);
+        String output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
+        int n = products.length;
+        for (int i = 0; i < n; i++) {
+            output += "Nazwa: " + products[i].name + ", waga: " + products[i].weight + ", cena: " + products[i].value + "\n";
+        }
+        lblText.setText(output);
         setLayout(new FlowLayout());
         setSize(800, 600);
         setTitle("Znajdz oferte dla siebie!");
@@ -56,7 +53,8 @@ public class User extends JFrame implements ActionListener {
 
     /**
      *
-     * Po wybraniu z listy konkretnego "plecaka" nastepuje wypisanie koncowych danych za pomoca switch case
+     * Po wybraniu z listy konkretnego "plecaka" nastepuje wypisanie koncowych
+     * danych za pomoca switch case
      */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == cmbMessageList) {
@@ -68,6 +66,13 @@ public class User extends JFrame implements ActionListener {
             int[] indexes = new int[n];
             output = "Przedmioty z najlepszym stosunkiem cena/waga:\n";
             switch (msg) {
+                case "Pokaż wszystko":
+                    output = "Mozliwe do zakupu przedmioty, ich wagi oraz cena:\n\n";
+                    for (int i = 0; i < n; i++) {
+                        output += "Nazwa: " + products[i].name + ", waga: " + products[i].weight + ", cena: " + products[i].value + "\n";
+                    }
+                    lblText.setText(output);
+                    break;
                 case "Ręce(Pojemność 10)":
                     indexes = Discrete_knapsack_problem.knapSack(10);
                     for (int i = 0; i < n; i++) {
